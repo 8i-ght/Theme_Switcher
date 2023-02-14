@@ -83,7 +83,7 @@ nav ul li a:visited {
 	color: #222;
 }
 nav ul li a:hover {
-	background-color: #b34a48;
+	background-color: #ffd554;
 	color: white;
 }
 nav ul li a:focus {
@@ -135,7 +135,7 @@ footer {
 	text-align: center;
 	font-size: 0.6em;
 	margin-top: 4%;
-	border-top: 3px outset #cf7b79;
+	border-top: 3px outset #bd8e00;
 	font-family: 'Barlow Condensed', sans-serif;
 	clear: both;
 	padding-bottom: 20px;
@@ -241,10 +241,10 @@ article aside {
 	float: right;
 	margin: 0 0 20px 20px;
 	padding: 1%;
-	border: 1px solid rgb(251, 151, 151);
+	border: 1px solid rgb(255, 225, 135);
 	width: 35%;
 	font-size: 0.9em;
-	background-color: #ffdcdb;
+	background-color: #ffebaf;
 }
 
 article aside h1 {
@@ -270,7 +270,7 @@ article div h1 {
 	font-weight: normal;
 	font-size: 1em;
 	border-bottom: 1px solid rgb(151, 151, 151);
-	background-color: #ffdcdb;
+	background-color: #ffefbd;
 }
 
 article div p {
@@ -297,7 +297,7 @@ html, body {
 }
 
 html {
-	background-color: #953e3c;
+	background-color: #FFDE7A;
 	margin: 0px auto;
 }
 body {

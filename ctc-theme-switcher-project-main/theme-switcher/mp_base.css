@@ -154,11 +154,14 @@ img {
 	border: 0;
 	-ms-interpolation-mode: bicubic;
 	vertical-align: middle;
+	height: 250px;
+	object-fit: scale-down;
+	padding-top: -10px;
+	padding-bottom: 20px;
 }
 figure {
 	margin: 0;
 }
-
 
 
 /* =============================================
