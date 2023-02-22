@@ -48,7 +48,6 @@ body {
 }
 
 h1 {
-	text-decoration: underline;
 	
 }
 /* =============================================
@@ -143,15 +142,7 @@ ul, ol {
 dd {
 	margin: 0 0 0 40px;
 }
-/* Nav Bar */
-nav ul, nav ol {
-	margin: auto;
-	padding: 0;
-	display: flex;
-	position: relative;
-	top: -300px;
-	height: auto;
-}
+
 
 
 
