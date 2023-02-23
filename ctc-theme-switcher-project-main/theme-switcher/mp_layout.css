@@ -276,20 +276,9 @@ article div p {
 			Nav Bar
    =========================== */
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-a {
-	color: black;
-	text-decoration: none;
-	list-style: none;
-}
 
 .navbar {
-	height: 70px;
+	height: 200px;
 	width: 100%;
 	background: #fff8e7;
 	color: black;
@@ -321,4 +310,101 @@ header {
 
 .navbar-nav li a:hover {
 	color:rgb(255, 225, 135);
+}
+
+/* ====================
+		Drop Down
+   ====================	*/
+.dropdown {
+	position: absolute;
+	width: 500px;
+	opacity: 0;
+	z-index: 2;
+	background: blue;
+	border-top: 2px solid white;
+
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 3rem;
+	margin-top: 2rem;
+	padding: 0.5rem;
+
+	box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+	transform: translateX(-40%);
+
+	transition: opacity .15s ease-out;
+}
+
+.has-dropdown:focus-within .dropdown {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.dropdown-item a {
+	width: 100%;
+	height: 100%;
+	size: 0.7rem;
+	padding-left: 10px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+.dropdown-item a::before {
+	content: ' ';
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+:root {
+	--gray0: #f8f8f8;
+	--gray1: #dbe1e8;
+	--gray2: #b3becd;
+	--gray3: #6c7983;
+	--gray4: #454e56;
+	--gray5: #2a2e35;
+	--gray6: #12181b;
+
+	--bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #d0d3d5;
+    --bs-dark: #212529;
+}
+
+.light {
+	--bg: var(--)
+}
+
+.dark {
+
+}
+
+.solar {
+
 }
