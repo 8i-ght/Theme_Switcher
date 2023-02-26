@@ -16,6 +16,24 @@ article, aside, details, dl, figcaption, figure, footer, header, main, nav, sect
 	display: block;
 }
 
+header {
+	color: var(--text);
+	background: var(--bg);
+	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+.container-fluid {
+	color: var(--text);
+	background: var(--bg);
+	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+.navbar-nav .nav-link {
+	color: var(--text);
+	background: var(--bg);
+	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
 aside {
 	position: relative;
 	top: 100px;
@@ -41,15 +59,15 @@ body {
 	margin: 0;
 	font-size: 1em;
 	line-height: 1.4;
+	color: var(--text);
+	background: var(--bg);
+	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
 .font {
 	font-family: 'Barlow Condensed', sans-serif;
 }
 
-h1 {
-	
-}
 /* =============================================
 	Hypertext links
    =============================================
@@ -331,4 +349,21 @@ td, th {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Logo Animation */
+
+@keyframes color-rotate {
+	from {
+		filter: hue-rotate(0deg);
+		}
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
+
+.logo:hover {
+	animation: color-rotate 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate
 }
